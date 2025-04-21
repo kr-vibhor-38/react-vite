@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 3000, // Change this to your desired port
   },
-  
+  base: process.env.VITE_BASE_PATH || "/react-vite"
 })
