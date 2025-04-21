@@ -1,0 +1,39 @@
+.print-btn{
+    background-color: #2bc23c; 
+    color: rgb(255, 255, 255); 
+    padding: 8px 16px; 
+    border: none; 
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    font-size: 16px; /* Readable text size */
+    font-weight: 500; /* Slightly bold text */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.print-btn:hover {
+    background-color: #24a033; /* Slightly darker green on hover */
+}
+
+/* Ensure the Link inside the button has no default styles */
+.print-btn a {
+    color: inherit; /* Inherits white color from button */
+    text-decoration: none; /* Removes underline from Link */
+}
+
+.download-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .download-btn:hover {
+    background-color: #004494;
+  }

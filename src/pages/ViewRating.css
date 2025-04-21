@@ -1,0 +1,300 @@
+/* Container Styling */
+.analytics-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d8ecf7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+/* info bar */
+.info-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Vote Count */
+.vote-count{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* button division */
+.btn-div{
+    margin-left: auto;
+}
+
+/* Question Block */
+.question-block {
+    background: #ffffff;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border-radius: 5px; */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Question and Response Layout */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Vote List (Left Side) */
+.vote-list {
+    flex: 1;
+}
+
+/* Question Text */
+.question-text {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Response List */
+.response-list {
+    width: 40%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.response-item {
+    background: #e3f2fd;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* Pie Chart */
+.pie-chart {
+    width: 60%;
+    flex: 1;
+}
+
+/* Home Link */
+.home-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/* Loading & Error Messages */
+.loading, .error {
+    text-align: center;
+    font-size: 18px;
+    color: #d32f2f;
+}
+
+/* Vote Table */
+/* Use a clean, modern font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Vote Container */
+.vote-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Vote Title */
+.vote-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Table Styling */
+.vote-table {
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.vote-table thead {
+    background-color: #004085;
+    color: white;
+    font-weight: 600;
+}
+
+.vote-table th {
+    padding: 14px;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+}
+
+/* Table Rows */
+.vote-table td {
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Alternate Row Colors */
+/* .vote-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+} */
+
+/* No Hover Animation for Header */
+.vote-table thead tr:hover {
+    background-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vote-table {
+        font-size: 15px;
+    }
+}
+
+
+/* Text Feedback */
+/* Use a professional font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Feedback Container */
+.feedback-container {
+    /* max-width: 1200px; */
+    margin: 10px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Feedback Title */
+.feedback-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight:600;
+    color: #222;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Table Styling */
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.feedback-table thead {
+    background-color: #0056b3;
+    color: white;
+    font-weight: 600;
+}
+
+.feedback-table th {
+    padding: 14px;
+    text-align: left;
+}
+
+/* Table Rows */
+.feedback-table td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Alternate Row Colors */
+/* .feedback-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+} */
+
+/* Remove Hover Animation for Header */
+.feedback-table thead tr:hover {
+    background-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .feedback-table {
+        font-size: 15px;
+    }
+}
+
+/* Common Button Styling */
+.see-more-btn {
+    margin: 5px 5px 0 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* See Less Button — Orange */
+.see-less-btn {
+    background-color: #fd7e14; /* Orange */
+    color: white;
+}
+.see-less-btn:hover {
+    background-color: #e36b05;
+}
+
+/* See More Button — Green */
+.see-more {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+.see-more:hover {
+    background-color: #218838;
+}
+
+/* See All Button — Blue */
+.seeall {
+    background-color: #0056b3; /* Blue */
+    color: white;
+}
+.seeall:hover {
+    background-color: #004494;
+}
+
+/* Shrink Button — Grey */
+.shrink {
+    background-color: #6c757d; /* Grey */
+    color: white;
+}
+.shrink:hover {
+    background-color: #5a6268;
+}
