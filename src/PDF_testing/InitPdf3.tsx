@@ -474,7 +474,7 @@ const FullPdfReport: React.FC<Props> = ({ info, chartImages }) => {
         ))}
 
         {/* Current Date and Time */}
-        <Text style={styles.dateTime}>{currentDateTime}</Text>
+        <Text style={styles.dateTime} fixed>{currentDateTime}</Text>
 
       </Page>
     </Document>
