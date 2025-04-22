@@ -11,15 +11,17 @@
     width: 100%;
     z-index: 1000;
     left: 0;
+    transition: padding 0.3s;
 }
-body{
-    margin-top: 60px;
+body {
+    margin-top: 70px;
 }
 
 .nv-containr {
-    flex: 1;  /* Takes up remaining space */
+    flex: 1;
     display: flex;
-    justify-content: center; /* Centers the buttons */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Logo */
@@ -27,6 +29,7 @@ body{
     font-size: 24px;
     font-weight: bold;
     color: #ecf0f1;
+    white-space: nowrap;
 }
 
 /* Navigation Links */
@@ -36,6 +39,7 @@ body{
     gap: 20px;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .nv-lnks li {
@@ -48,28 +52,120 @@ body{
     font-size: 17px;
     font-weight: bold;
     padding: 8px 12px;
-    transition: color 0.3s ease-in-out;
-    font-family: consolas;
+    transition: color 0.3s;
+    font-family: consolas, monospace;
+    border-radius: 4px;
 }
 
-.nv-lnks a:hover {
+.nv-lnks a:hover,
+.nv-lnks a:focus {
     color: #f39c12;
+    background: rgba(255,255,255,0.07);
+    outline: none;
+}
+
+/* Hamburger menu icon */
+.nv-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+}
+.nv-hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #ecf0f1;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
 }
 
 /* Responsive Design */
+@media (max-width: 900px) {
+    .nv-lnks a {
+        font-size: 15px;
+        padding: 8px 8px;
+    }
+    .logo_ {
+        font-size: 20px;
+    }
+    .nvbr {
+        padding: 10px 8px;
+    }
+}
+
 @media (max-width: 768px) {
     .nvbr {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 8px;
     }
-
     .nv-containr {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
-    .nv-lnks {
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 10px;
+    /* Hamburger visible */
+    .nv-hamburger {
+        display: flex;
     }
+
+    /* Hide nav links by default on mobile */
+    .nv-lnks {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #2c3e50;
+        flex-direction: column;
+        gap: 0;
+        width: 180px;
+        padding: 8px 0;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 0.3s;
+        z-index: 1200;
+    }
+
+    /* Show nav links when menu is toggled */
+    .nvbr.menu-open .nv-lnks {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nv-lnks li {
+        display: block;
+        text-align: left;
+    }
+    .nv-lnks a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .logo_ {
+        font-size: 18px;
+    }
+    .nv-lnks {
+        width: 100vw;
+        right: 0;
+        left: 0;
+        top: 50px;
+        border-radius: 0;
+    }
+    .nv-lnks a {
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+}
+.nv-menu-toggle {
+    display: none;
 }

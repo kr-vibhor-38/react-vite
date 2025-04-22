@@ -1,6 +1,7 @@
 /* Container Styling */
 .analytics-container {
     max-width: 1200px;
+    min-width: 1207px;
     margin: 20px auto;
     padding: 20px;
     background-color: #d8ecf7;
@@ -77,6 +78,7 @@
 
 /* Pie Chart */
 .pie-chart {
+    min-width: auto;
     width: 60%;
     flex: 1;
 }
