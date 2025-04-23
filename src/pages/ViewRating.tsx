@@ -157,8 +157,8 @@ const ViewRating: React.FC = () => {
                                     <tr>
                                         <th>#</th>
                                         <th>Feedback</th>
-                                        <th>Created At</th>
-                                        <th>Updated At</th>
+                                        <th style={{width:"112px"}}>Created At</th>
+                                        <th style={{width:"112px"}}>Updated At</th>
                                     </tr>
                                 </thead>
                                 <tbody>
