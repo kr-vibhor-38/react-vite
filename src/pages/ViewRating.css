@@ -11,9 +11,11 @@
 
 /* Title */
 .title {
+    font-family: 'Calibri';
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
     color: #333;
+    margin-top: 10px;
 }
 
 /* info bar */

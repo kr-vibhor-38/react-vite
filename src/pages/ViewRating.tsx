@@ -67,7 +67,7 @@ const ViewRating: React.FC = () => {
     return (
 
         <div className="analytics-container">
-            <h2 className="title">Analytics Component</h2>
+            <h2 className="title">FEEDBACK REPORT</h2>
             <div className="info-bar">
                 <div className="vote-count">
                     <h3>Total Number of Respondents: <span style={{ color: '#2bc23c' }}>{n}</span></h3>
