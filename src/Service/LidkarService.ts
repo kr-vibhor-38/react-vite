@@ -13,7 +13,7 @@ const LidkarService = ()=>{
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get("https://pollmonk-server.sunplussoftware.com:4101/p12_mm_get_survey/get_survey_res/?feedid=MjI=");
+            const response = await axios.get("https://pollmonk-server.sunplussoftware.com:4101/p12_mm_get_survey/get_survey_res/?feedid=MQ==");
             setInfo(response.data);
           } catch (err: any) {
             setError(err.message || "Error fetching responses.");
