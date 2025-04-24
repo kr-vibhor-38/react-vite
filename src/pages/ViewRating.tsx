@@ -178,10 +178,10 @@ const ViewRating: React.FC = () => {
                                 <span className="page-number-indicator">
                                     {startIndex + 1} - {endIndex} / {total}
                                 </span>
-                                <button onClick={goToFirst} disabled={startIndex === 0}>⏮ First</button>
-                                <button onClick={goToPrev} disabled={startIndex === 0}>&#x25C0; Previous</button>
-                                <button onClick={goToNext} disabled={endIndex >= total}>Next &#x25B6;</button>
-                                <button onClick={goToLast} disabled={endIndex >= total}>Last ⏭</button>
+                                <button className="fnl" onClick={goToFirst} disabled={startIndex === 0}> ⏮ FIRST</button>
+                                <button onClick={goToPrev} disabled={startIndex === 0}>&#x25C0; PREV</button>
+                                <button onClick={goToNext} disabled={endIndex >= total}>NEXT &#x25B6;</button>
+                                <button className="fnl" onClick={goToLast} disabled={endIndex >= total}>LAST ⏭</button>
                                 
 
                                 {/* Step Size Selector */}

@@ -15,18 +15,21 @@
     font-size: 24px;
     color: #333;
 }
+
 /* info bar */
-.info-bar{
+.info-bar {
     display: flex;
     justify-content: space-between;
 }
 
 /* Vote Count */
-.vote-count{
+.vote-count {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 }
+
 /* button division */
-.btn-div{
+.btn-div {
     margin-left: auto;
 }
 
@@ -98,7 +101,8 @@
 }
 
 /* Loading & Error Messages */
-.loading, .error {
+.loading,
+.error {
     text-align: center;
     font-size: 18px;
     color: #d32f2f;
@@ -204,7 +208,7 @@ body {
 .feedback-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    font-weight:600;
+    font-weight: 600;
     color: #222;
     margin-bottom: 15px;
     text-align: left;
@@ -257,55 +261,6 @@ body {
     }
 }
 
-/* Common Button Styling */
-.see-more-btn {
-    margin: 5px 5px 0 0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* See Less Button — Orange */
-.see-less-btn {
-    background-color: #fd7e14; /* Orange */
-    color: white;
-}
-.see-less-btn:hover {
-    background-color: #e36b05;
-}
-
-/* See More Button — Green */
-.see-more {
-    background-color: #28a745; /* Green */
-    color: white;
-}
-.see-more:hover {
-    background-color: #218838;
-}
-
-/* See All Button — Blue */
-.seeall {
-    background-color: #0056b3; /* Blue */
-    color: white;
-}
-.seeall:hover {
-    background-color: #004494;
-}
-
-/* Shrink Button — Grey */
-.shrink {
-    background-color: #6c757d; /* Grey */
-    color: white;
-}
-.shrink:hover {
-    background-color: #5a6268;
-}
-
-
-
-
 .pagination-controls {
     display: flex;
     align-items: center;
@@ -315,64 +270,81 @@ body {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .page-number-indicator{
+.page-number-indicator {
     font-family: 'Calibri';
     font-size: 18px;
     font-weight: 600;
-  }
-  
-  .pagination-controls button {
+}
+
+/* General Pagination Buttons */
+.pagination-controls button {
     font-family: 'Calibri';
-    font-size: medium;
-    padding: 4px 7px 4px ;
-    background-color: #007bff;
+    font-size: 15px;
+    padding: 4px 10px;
+    background-color: #007bff;       /* Default blue */
     color: #fff;
-    font-weight: 500;
-    border: none;
+    font-weight: 600;
+    border: 2px solid #007bff;
     border-radius: 4px;
     cursor: pointer;
-    transition: background 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   
   .pagination-controls button:disabled {
     background-color: #ccc;
+    border-color: #ccc;
+    color: #666;
     cursor: not-allowed;
   }
   
   .pagination-controls button:hover:not(:disabled) {
-    background-color: #0056b3;
+    background-color: transparent;
+    color: #007bff;
+    border-color: #007bff;
   }
   
-  .control-section {
+  /* FIRST and LAST buttons (fnl class) - Orange styling */
+  .pagination-controls .fnl {
+    background-color: #ff5100;
+    border-color: #ff5100;
+    color: #fff;
+  }
+  
+  .pagination-controls .fnl:hover:not(:disabled) {
+    background-color: transparent;
+    color: #ff5100;
+    border-color: #ff5100;
+  }
+
+.control-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0px;
     margin-top: auto;
     font-size: 14px;
-  }
-  
-  .control-section select,
-  .control-section input[type="number"] {
+}
+
+.control-section select,
+.control-section input[type="number"] {
     font-family: 'calibri';
     padding: 2px 4px;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 17px;
     min-width: 60px;
-  }
-  
-  .op-name{
+}
+
+.op-name {
     font-family: 'Calibri';
     font-size: 18px;
-  }
-  
-  .control-section label {
+}
+
+.control-section label {
     font-family: 'Calibri';
     font-size: 17px;
     font-weight: 500;
     margin-right: 6px;
-  }
-  
+}
